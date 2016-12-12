@@ -1,18 +1,18 @@
 {
   "name": "rxjs-fs",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "RxJS wrappers around some of the node fs lib.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "lint": "tslint src/**/*.ts"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:trxcllnt/rxjs-fs.git"
   },
   "dependencies": {
-    "lodash": "*",
-    "rx": "*"
+    "rxjs": "^5.0.0-rc.5"
   },
   "keywords": [
     "rx",
@@ -23,5 +23,11 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/trxcllnt/rxjs-fs/issues"
+  },
+  "devDependencies": {
+    "typescript": "^2.1.4",
+    "tslint": "^4.0.2",
+    "tslint-config-standard": "^2.0.0",
+    "typings": "^2.0.0"
   }
 }
